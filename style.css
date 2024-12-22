@@ -1,0 +1,245 @@
+/* Home */
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5f9;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #004a63;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #00d1c1 !important;
+}
+.search-bar {
+    position: relative;
+}
+.search-input {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 10px;
+}
+.search-icon {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Hero Section */
+.hero button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Navbar Styling */
+
+
+/* Hero Section */
+.hero {
+    background-color: #cae9f2;
+    padding: 20px 0;
+    text-align: center;
+}
+.hero .btn {
+    margin-top: 5%;
+    background-color: #4f504f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* Cards Grid Layout for Large Screens */
+.cards-container {
+    display: grid;
+    grid-template-areas: 
+        "left top1 top1 top2 top3"
+        "left bottom1 bottom2 bottom3 bottom4";
+    gap: 15px;
+    padding: 20px;
+}
+.cards-container .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    font-size: 1.2rem;
+}
+.cards-container .card.left {
+    grid-area: left;
+    height: 100%;
+    background: url('https://via.placeholder.com/300') no-repeat center center;
+    background-size: cover;
+    color: transparent; /* لإخفاء النص */
+}
+.top1{
+    grid-area: top1;
+}
+.top2{
+    grid-area: top2;
+}
+.top3{
+    grid-area: top3;
+}
+.bottom1{
+    grid-area: bottom1;
+}
+.bottom2{
+    grid-area: bottom2;
+}
+.bottom3{
+    grid-area: bottom3;
+}
+.cards-container .card.bottom4 {
+    grid-area: bottom4;
+}
+
+/* Responsive Design for Tablets (≥ 567px and < 992px) */
+@media (min-width: 567px) and (max-width: 991px) {
+    .cards-container {
+        grid-template-areas: 
+            "left left"
+            "top1 top2"
+            "bottom1 bottom2"
+            "bottom3 bottom4"
+            "top3 b";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-container .card.left {
+        grid-column: span 2; /* الكارد Left يأخذ عرض عمودين */
+        height: 200px; /* ارتفاع مناسب */
+    }
+}
+
+/* Responsive Design for Phones (< 567px) */
+@media (max-width: 566px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards-container .card {
+        height: 120px; /* توحيد ارتفاع الكروت */
+        font-size: 1rem;
+    }
+
+    .cards-container .card.left {
+        height: 200px; /* تخصيص ارتفاع أكبر للكارد Left */
+    }
+}
+
+/* Events and Footer */
+.events, .footer {
+    background-color: #004a63;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+
+.social-icons .icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: #00d1c1; /* لون التأثير عند الوقوف */
+}
+
+.social-icons .icon:active {
+    transform: scale(1.1) rotate(-10deg);
+    color: #ff6347; /* لون مختلف عند النقر */
+}
+/* Home */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brimbolo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                </ul>
+                <div class="search-bar d-none d-lg-block">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="search-icon">⚲</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <button class="btn">Where to Buy</button>
+        <div class="container cards-container">
+            
+            <div class="card left ">Left Image</div>
+            <div class="card top1">Top 1</div>
+            <div class="card top2">Top 2</div>
+            <div class="card top3">Top 3</div>
+            <div class="card bottom1">Bottom 1</div>
+            <div class="card bottom2">Bottom 2</div>
+            <div class="card bottom3">Bottom 3</div>
+            <div class="card bottom4">Bottom 4</div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="events">Events</div>
+
+    <!-- Footer -->
+    <footer class="footer">Footer</footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html> */

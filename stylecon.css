@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004a63;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #00d1c1 !important;
+}
+.search-bar {
+    position: relative;
+}
+.search-input {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 10px;
+}
+.search-icon {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Contact Form */
+.contact-section {
+    padding: 50px 0;
+}
+.card {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #004a63;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.btn-submit {
+    background-color: #525353;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 42%;
+}
+.btn-submit:hover {
+    background-color: #008a84;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #004a63;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.social-icons .icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: #00d1c1; /* لون التأثير عند الوقوف */
+}
+
+.social-icons .icon:active {
+    transform: scale(1.1) rotate(-10deg);
+    color: #ff6347; /* لون مختلف عند النقر */
+}

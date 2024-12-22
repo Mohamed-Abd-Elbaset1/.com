@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brimbolo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="stylecon.css">
+    <!-- Custom CSS -->
+
+</head>
+<body>
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Brimbolo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Product.html">Products</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="Cart.html">Cart</a></li>
+                    </ul>
+                    <div class="search-bar d-none d-lg-block">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <span class="search-icon">⚲</span>
+                    </div>
+                    <a href="Cart.html" class="nav-link position-relative">
+                        <i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
+                            0
+                        </span>
+                    </a>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+    <!-- Contact Form Section -->
+    <section class="contact-section mt-5 pt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Contact Us
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                                    <div class="invalid-feedback">Please enter the subject.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment" class="form-label">Comment</label>
+                                    <textarea class="form-control" id="comment" rows="3" placeholder="Enter your comment" required></textarea>
+                                    <div class="invalid-feedback">Please enter your comment.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                    <div class="invalid-feedback">Name is required.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                    <div class="invalid-feedback">Phone number is required.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Type:</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="type" id="user" value="User" checked>
+                                        <label class="form-check-label" for="user">User</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="type" id="distributor" value="Distributor">
+                                        <label class="form-check-label" for="distributor">Distributor</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="type" id="installer" value="Installer">
+                                        <label class="form-check-label" for="installer">Installer</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-submit btn-block">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="social-icons d-flex justify-content-center gap-3 mb-3">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="icon">
+                    <i class="bi bi-linkedin" style="color: #0077b5;"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/123456789" target="_blank" class="icon">
+                    <i class="bi bi-whatsapp" style="color: #25d366;"></i>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:example@gmail.com" target="_blank" class="icon">
+                    <i class="bi bi-envelope" style="color: #d14836;"></i>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" target="_blank" class="icon">
+                    <i class="bi bi-facebook" style="color: #3b5998;"></i>
+                </a>
+                <!-- Phone -->
+                <a href="tel:+123456789" class="icon">
+                    <i class="bi bi-telephone" style="color: #000;"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Brimbolo | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const form = event.target;
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+            } else {
+                alert('Form submitted successfully!');
+                form.reset();
+                form.classList.remove('was-validated');
+            }
+        });
+    </script>
+        <script src="cart-counter.js"></script>
+</body>
+</html>

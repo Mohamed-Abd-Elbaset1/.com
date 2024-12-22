@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brimbolo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="Product.html">Products</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="Cart.html">Cart</a></li>
+                </ul>
+                <div class="search-bar d-none d-lg-block">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="search-icon">⚲</span>
+                </div>
+                <a href="Cart.html" class="nav-link position-relative">
+                    <i class="bi bi-cart" style="font-size: 1.5rem;"></i>
+                    <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">
+                        0
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <button class="btn" href="Product.html">Where to Buy</button>
+        <div class="container cards-container">
+            <div class="card left" style="background: url('Images/camera\ \(15\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card top1" style="background: url('Images/camera\ \(16\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card top2" style="background: url('Images/camera\ \(18\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card top3" style="background: url('Images/camera\ \(2\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card bottom1" style="background: url('Images/camera\ \(19\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card bottom2" style="background: url('Images/camera\ \(5\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card bottom3" style="background: url('Images/camera\ \(21\).jpg') no-repeat center center; background-size: cover;"></div>
+            <div class="card bottom4" style="background: url('Images/camera\ \(8\).jpg') no-repeat center center; background-size: cover;"></div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="events">Events</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="social-icons d-flex justify-content-center gap-3 mb-3">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="icon">
+                    <i class="bi bi-linkedin" style="color: #0077b5;"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/123456789" target="_blank" class="icon">
+                    <i class="bi bi-whatsapp" style="color: #25d366;"></i>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:example@gmail.com" target="_blank" class="icon">
+                    <i class="bi bi-envelope" style="color: #d14836;"></i>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" target="_blank" class="icon">
+                    <i class="bi bi-facebook" style="color: #3b5998;"></i>
+                </a>
+                <!-- Phone -->
+                <a href="tel:+123456789" class="icon">
+                    <i class="bi bi-telephone" style="color: #000;"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Brimbolo | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="cart-counter.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
